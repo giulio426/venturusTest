@@ -1,0 +1,67 @@
+{
+  "userExtraData": [
+    {
+      "id": 1,
+      "userId": 1,
+      "rideInGroup": "Always",
+      "dayOfWeek": "Every Day"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "rideInGroup": "Sometimes",
+      "dayOfWeek": "Week Days"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "rideInGroup": "Never",
+      "dayOfWeek": "Mon, Wed, Fri"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "rideInGroup": "Sometimes",
+      "dayOfWeek": "Mon, Tue, Wed"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "rideInGroup": "Sometimes",
+      "dayOfWeek": "Weekends"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "rideInGroup": "Always",
+      "dayOfWeek": "Fri, Sun"
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "rideInGroup": "Always",
+      "dayOfWeek": "Every Day"
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "rideInGroup": "Always",
+      "dayOfWeek": "Every Day"
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "rideInGroup": "Always",
+      "dayOfWeek": "Every Day"
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "rideInGroup": "Always",
+      "dayOfWeek": "Every Day"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

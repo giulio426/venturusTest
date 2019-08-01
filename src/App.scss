@@ -1,0 +1,350 @@
+$base-color: #bcebe1;
+$highlit-color: #3ac5a8;
+$lightBkg: #f9f9f9;
+$tableHoverColor: #e3e3e3;
+$tableEvenColor: #f8f8f8;
+$lightTextColor: #6f6e6e;
+$dividerColor: #f1f1f1;
+$inputBorder: #d9d9d9;
+
+input {
+  border: 1px solid $highlit-color;
+  border-radius: 5px;
+  margin: 10px 0px;
+  height: 30px;
+  line-height: 20px;
+  padding: 5px;
+  width: 100%;
+}
+label {
+  font-weight: 400;
+}
+small {
+  color: gray;
+}
+
+.radioLabel {
+  text-transform: capitalize;
+}
+
+.formInputContainer {
+  margin: 10px 0px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 40px;
+}
+
+.verticalRow {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 24px;
+
+  .noPadding {
+    padding: 0px;
+  }
+
+  .smallVerticalPadding {
+    padding: 8px 24px;
+  }
+  .mediumVerticalPadding {
+    padding: 16px 24px;
+  }
+  .largeVerticalPadding {
+    padding: 24px 24px;
+  }
+}
+
+.column {
+  flex-basis: 100%;
+  margin-right: 8px;
+  .verticalCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-center {
+  justify-content: center;
+}
+
+.backgroundColorLight {
+  background-color: $lightBkg;
+}
+
+.backgroundColorGreen {
+  background-color: $base-color;
+}
+.highlitedIcon {
+  height: 64px !important;
+  width: 64px !important;
+  margin-right: 24px;
+  color: $highlit-color;
+}
+
+.topHeaderIcon {
+  width: 36px !important;
+  height: 24px;
+  padding-top: 5px;
+}
+.topHeaderIconContainer {
+  height: 36px;
+  width: 36px;
+  border-radius: 10px;
+  background-color: $highlit-color;
+}
+
+.colorHighlited {
+  color: $highlit-color !important;
+}
+
+.padding8 {
+  padding: 8px;
+}
+
+.marginBottom24 {
+  margin-bottom: 24px;
+}
+.marginRight24 {
+  margin-right: 24px;
+}
+.marginRight8 {
+  margin-right: 8px;
+}
+
+.lightText {
+  font-weight: 300;
+  color: $lightTextColor;
+}
+
+.topHeaderTitle {
+  font-size: 20px;
+  margin-left: 10px;
+  height: 100%;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.userInitials {
+  border: 1px solid #6f6e6e;
+  border-radius: 20px;
+  height: 36px;
+  width: 36px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 36px;
+}
+.userNameTitle {
+  height: 36px;
+  line-height: 36px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+h3 {
+  font-size: 28px;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+td {
+  padding-left: 8px;
+  min-width: 20px;
+}
+
+table {
+  empty-cells: show;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 64px;
+  thead {
+    border-bottom: 1px solid #bfbfbf;
+
+    tr {
+      td {
+        font-weight: 600;
+        height: 52px;
+      }
+    }
+  }
+  .displayOnHover {
+    display: none;
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: $tableEvenColor;
+      }
+      &:hover {
+        .displayOnHover {
+          display: inline;
+        }
+
+        background-color: $tableHoverColor;
+      }
+
+      td {
+        border: none;
+        height: 48px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.clicklabe {
+  cursor: pointer;
+}
+.inputContainer {
+  border: 1px solid $inputBorder;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  input {
+    height: auto;
+    margin: auto;
+    border: none !important;
+    color: #9a9a9a;
+    width: 100%;
+    font-weight: 500;
+    padding: 5px 0px;
+    &::placeholder {
+      color: #9a9a9a;
+    }
+    &:focus {
+      border: none !important;
+      outline: none !important;
+    }
+  }
+  svg {
+    color: #9a9a9a;
+    padding: 5px 5px 5px 0px;
+  }
+}
+
+.divder {
+  border: 2px solid $dividerColor;
+  background-color: $dividerColor;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+    .column-2 {
+      max-width: 20%;
+    }
+    .column-1 {
+      max-width: 10%;
+    }
+    .column-4 {
+      max-width: 25%;
+    }
+    .column-3 {
+      max-width: 33%;
+    }
+    .column-8 {
+      max-width: 80%;
+    }
+    .column-9 {
+      max-width: 90%;
+    }
+  }
+}
+
+//BUTTON STYLE
+.button {
+  padding: 8px 20px;
+  &:hover {
+    opacity: 0.7;
+  }
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  &.highlitedButton {
+    background-color: $highlit-color;
+    color: white;
+  }
+  &.mutedButton {
+    background-color: #e3e3e3;
+    color: #6f6e6e;
+  }
+}
+
+// RADIO STYLE
+
+.radioContainer {
+  margin: 10px 0px 10px 5px;
+  display: flex;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+
+  .radioItem {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    &:hover {
+      border: 1px solid $highlit-color;
+    }
+    &.checked {
+      border: 1px solid $highlit-color;
+    }
+    .radioItemChecked {
+      height: 15px;
+      width: 15px;
+      margin: 5px;
+      border-radius: 20px;
+      background-color: black;
+    }
+
+    &.checkBox {
+      border-radius: 5px !important;
+    }
+  }
+  .radioItemLabel {
+    padding-left: 5px;
+    line-height: 25px;
+    margin: auto;
+    text-transform: capitalize;
+  }
+}
